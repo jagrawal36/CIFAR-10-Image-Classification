@@ -1,0 +1,59 @@
+##################################################################################
+#####     FOR FOLDER final_codes   ###############################################
+##################################################################################
+
+Run:
+python nncifar10_deep_only_test.py
+
+Files present:
+(1) nncifar10_deep_train_and_test.py : This is to train the neural network for a given number of epochs and to dump the prediction for the given test images.
+(2) nncifar10_deep_only_test.py : This is to load the weights in the file "weights40epochs" and to predict the label for the test images.
+(3) weights40epochs : This would be read by nncifar10_deep_only_test.py while loading weights.
+
+
+Inputs needed:
+Folder train: containing 50000 images
+Folder test: containing 300000 images
+File trainLabels.csv: containing the label of the 50000 train images
+weights40epochs: containing weights for the neural net trained for 40 epochs.
+
+Output dumped:
+File Out1.csv: File containing the predicted label of the 300000 test images
+
+Note: 
+(1) The header of the file Out1.csv needs to be updated mannualy to the correct format before uploading it to the kaggle website.
+
+(2) Folder train, test and trainLabels.csv should be one level above the hierarchy where the file nncifar10_deep.py exists else nncifar10_deep.py needs to be edited.
+
+(3) Github repository from where the help is took to build nncifar10_deep.py file:
+https://github.com/fchollet/keras/blob/master/examples/cifar10_cnn.py
+
+How to run:
+Just make sure that we have the inputs needed as specified above and then run "python nncifar10_deep_only_test.py". This will give out1.csv as the output file. Edit the header of this output file before uploading to kaggle.
+
+
+##################################################################################
+#####     FOR FOLDER softmax_codes     ###########################################
+##################################################################################
+
+Run: 
+python softmax_kaggle.py
+
+Files present:
+softmax_kaggle.py : Main file to be run
+softmax.py : library file
+utils.py : contains data shaping utilities
+
+Inputs needed:
+Folder train: containing 50000 images
+Folder test: containing 300000 images
+
+Output dumped:
+File Out1.csv: File containing the predicted label of the 300000 test images
+
+Note: 
+(1) The header of the file Out1.csv needs to be updated mannualy to the correct format before uploading it to the kaggle website.
+
+(2) Folder train, test and trainLabels.csv should be one level above the hierarchy where the file softmax_kaggle.py exists.
+
+
